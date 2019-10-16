@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v3.12.1, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>{{ data['gam'].name }}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="{{ url_for('static',filename='dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='theme/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/common.css') }}">
+    <style type="text/css">
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="mbr-cards mbr-section mbr-section-nopadding" id="features3-j" style="background-color: rgb(0, 255, 255, 20%);">
+            <h1 align="center"><br><strong>
+                    <font size="6">{{ data['gam'].name }}</font>
+                </strong></h1>
+            <div class="mbr-cards-row row">
+                {% if data['sub'] %}{% for v in data['sub'] %}
+                <div class="mbr-cards-col col-xs-15 col-lg-4" style="padding-top: 40px; padding-bottom: 40px;">
+                    <div class="container">
+                        <div class="card cart-block" style="background-color: rgb(0, 20, 100, 10%);">
+                            <div class="card-img"><a href="{{ v.url }}"><img style="height:200px;" src="/static/uploads/{{ v.img }}" class="card-img-top"></a></div>
+                            <p class="card-text"></p>
+                            <div class="card-btn"><a href="{{ v.url }}" class="btn btn-black">
+                                    <font size="2">{{ v.name }}</font>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}{% endif %}</div>
+    </div>
+    </section>
+    <section class="mbr-section mbr-section__container article" id="header3-b" style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 20px;">
+        {% if data['mes'] %}{% for v in data['mes'] %}
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10">
+                    <h3 class="mbr-section-title">{{ v.title }}</h3>
+                    <small class="mbr-section-subtitle" style="width: 80vw">{{ v.createdAt }}</small>
+                    <div style="margin:30px;">
+                        <span id="content">
+                            <pre style="width: 70vw">{{ v.content }}</pre>
+                        </span>
+                    </div>
+                    <a href="" id="btn"></a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}{% endif %}
+    </section>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{ url_for('static',filename='theme/js/script.js') }}"></script>
+    <input name="animation" type="hidden">
+</body>
+
+</html>
