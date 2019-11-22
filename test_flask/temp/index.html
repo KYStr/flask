@@ -1,198 +1,465 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0030)http://jpopsports.nchu.edu.tw/ -->
+<html xmlns:fb="http://ogp.me/ns/fb#" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="app" class="js csstransitions ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta property="fb:app_id" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
     <title>教育局運動競賽資訊系統</title>
-    <link rel="stylesheet" href="theme/css/style.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <style type="text/css">
-    pre {
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        font-size:1.1em
-    }
-    </style>
+    <link type="image/icon" rel="shortcut icon" href="http://jpopsports.nchu.edu.tw/assets/images/favicon.ico">
+    <link type="image/icon" rel="Bookmark" href="http://jpopsports.nchu.edu.tw/assets/image/favicon.ico">
+    <link type="image/icon" rel="apple-touch-icon" href="http://jpopsports.nchu.edu.tw/assets/images/icon@2.png">
+    <link type="text/css" rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./index_files/animate.css">
+    <link type="text/css" rel="stylesheet" href="./index_files/remodal.css">
+    <link type="text/css" rel="stylesheet" href="./index_files/remodal-default-theme.css">
+    <link type="text/css" rel="stylesheet" href="./index_files/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="./index_files/primary.css">
+    <link type="text/css" rel="stylesheet" href="./index_files/common.css">
 </head>
 
-<body style="background-color: #FCFCFC;">
-    <nav class="navbar navbar-inverse navbar-scroll" style="margin: 0;padding: 5px,10px,200px,10px">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <strong><a class="navbar-brand" href="#">教育局運動競賽資訊系統</a></strong>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-
+<body class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
     <div>
-        <div class="container" style="background-color: #F0F0F0;">
-            <div class="row">
-                <div class="container" style="text-align:center;">
-                    <a href="#">
-                        <img style="width:90%" src="image/3.png">
-                    </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4" style="padding: 20px; padding-bottom: 40px;height: 31vw">
-                    <div class="card" style="background-color: #E0E5EE;padding: 10px">
-                        <div style="text-align:center;">
-                            <a href="http://3s.nchu.edu.tw/72">
-                                <img style="width: 20vw;min-width: 200px;overflow: hidden;" src="image/4.jpg">
-                            </a>
-                        </div>
-                        <div style="text-align:center;margin: 7px;padding: 7px"><a href="http://3s.nchu.edu.tw/72" class="btn btn-black" style="background-color:   #7B7B7B">
-                                <font>108中等學校籃球聯賽</font>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-4" style="padding: 20px; padding-bottom: 40px;height: 31vw">
-                    <div class="card" style="background-color: #E0E5EE;padding: 10px">
-                        <div style="text-align:center;">
-                            <a href="http://3s.nchu.edu.tw/101">
-                                <img style="width: 20vw;min-width: 200px;" src="image/5.jpg">
-                            </a>
-                        </div>
-                        <div style="text-align:center;margin: 7px;padding: 7px"><a href="http://3s.nchu.edu.tw/101" class="btn btn-black" style="background-color:  #7B7B7B"> 
-                                <font>109市中運桌球賽</font>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-4" style="padding: 20px; padding-bottom: 40px;height: 31vw">
-                    <div class="card" style="background-color: #E0E5EE;padding: 10px">
-                        <div style="text-align:center;">
-                            <a href="http://tcbatw.org/">
-                                <img style="width: 20vw;min-width: 200px;" src="image/6.png">
-                            </a>
-                        </div>
-                        <div style="text-align:center;margin: 7px;padding: 7px"><a href="http://tcbatw.org/" class="btn btn-black" style="background-color:  #7B7B7B"> 
-                                <font>109市中運羽球賽</font>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-4" style="padding: 20px; padding-bottom: 40px;height: 31vw">
-                    <div class="card" style="background-color: #E0E5EE;padding: 10px">
-                        <div style="text-align:center;">
-                            <a href="http://www.tctkd.url.tw/register/">
-                                <img style="width: 20vw;min-width: 200px;" src="image/7.png">
-                            </a>
-                        </div>
-                        <div style="text-align:center;margin: 7px;padding: 7px"><a href="http://www.tctkd.url.tw/register/" class="btn btn-black" style="background-color:  #7B7B7B"> 
-                                <font>109市中運跆拳道</font>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-4" style="padding: 20px; padding-bottom: 40px;height: 31vw">
-                    <div class="card" style="background-color: #E0E5EE;padding: 10px">
-                        <div style="text-align:center;">
-                            <a href="http://163.17.55.5/tchg2020/">
-                                <img style="width: 20vw;min-width: 200px;" src="image/8.png">
-                            </a>
-                        </div>
-                        <div style="text-align:center;margin: 7px;padding: 7px"><a href="http://163.17.55.5/tchg2020/" class="btn btn-black" style="background-color:  #7B7B7B"> 
-                                <font>109市中運田徑</font>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-md-4" style="padding: 20px; padding-bottom: 40px;height: 31vw">
-                    <div class="card" style="background-color: #E0E5EE;padding: 10px">
-                        <div style="text-align:center;">
-                            <a href="http://163.17.55.5/tchg2020/">
-                                <img style="width: 20vw;min-width: 200px;" src="image/9.png">
-                            </a>
-                        </div>
-                        <div style="text-align:center;margin: 7px;padding: 7px"><a href="http://163.17.55.5/tchg2020/" class="btn btn-black" style="background-color:  #7B7B7B"> 
-                                <font>109市中運游泳</font>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-6 col-md-4" style="padding: 20px; padding-bottom: 40px;height: 31vw">
-                    <div class="card" style="background-color: #E0E5EE;padding: 10px">
-                        <div style="text-align:center;">
-                            <a href="http://spopsports.nchu.edu.tw/">
-                                <img style="width: 20vw;min-width: 200px;" src="image/2.png">
-                            </a>
-                        </div>
-                        <div style="text-align:center;margin: 7px;padding: 7px"><a href="http://spopsports.nchu.edu.tw/" class="btn btn-black" style="background-color:     #7B7B7B">
-                                <font>國中普及化運動</font>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-xs-6 col-md-4" style="padding: 20px; padding-bottom: 40px;height: 31vw">
-                    <div class="card"style="background-color: #E0E5EE;padding: 10px">
-                        <div style="text-align:center;">
-                            <a href="http://jpopsports.nchu.edu.tw/">
-                                <img style="width: 20vw;min-width: 200px;" src="image/1.png">
-                            </a>
-                        </div>
-                        <div style="text-align:center;margin: 7px;padding: 7px"><a href="http://jpopsports.nchu.edu.tw/" class="btn btn-black" style="background-color:     #7B7B7B">
-                                <font>國小普及化運動</font>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
+        <a href="#">
+            <img style="width: 100vw;" src="./index_files/12.png">
+        </a>
     </div>
-    <section class="container mbr-section mbr-section__container article" id="header3-b" style="padding-top: 20px;background-color: #F0F0F0;">
-
-        <div>
-            <div class="row">
-                <div class="col-xs-10 ">
-                    <h3 type="button" onclick="Show_Hidden(bt{{ v.id }})"></h3>
-                    <small class="mbr-section-subtitle" style="width: 80vw;"><small></small></small>
-                    <div id="bt{{ v.id }}" style="width: 70vw;display: none;margin:3vh;">
-                        <span> <strong>
-                            <pre style="width: 70vw;"></pre></strong>
-                        </span>
-                    </div>
-                </div>
-            </div>
+      <div class="pace-progress-inner"></div>
+<div class="pace-activity"></div></div>
+<main id="panel" class="remodal-bg remodal-is-closed">
+    <div class="cross_line"></div>
+    <div>
+        <a href="#">
+            <img style="width: 100vw;" src="./index_files/12.png">
+        </a>
+    </div>
+    <div class="cross_line"></div>
+    <section class="index_banner">
+        <div class="container">
+            <div class="index_title"><img src="" alt=""></div>
+            <div class="index_title_m"><img src="" alt=""></div>
         </div>
-
     </section>
-    <div class="container" style="height: 20vh background-color: #F0F0F0;"></div>
-    </div>
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="theme/js/script.js"></script>
-    <script src="js/index.js"></script>
-    <script>
-    function Show_Hidden(btid) {
-        if (btid.style.display == 'block') { 
-            btid.style.display = 'none'; 
-        } else {
-            btid.style.display = 'block';
-        }
-    };
-    </script>
-</body>
+    <section class="sport_select">
+        <div class="container">
+            <div class="select_wrapper">
+                    
+                    <div class="select_item">
+                        <div class="item_padding"> 
+                            <a href="https://www.youtube.com/">   
+                                <div class="item_cover">
+                                    <img src="./index_files/011.png" alt="" class="sport_icon">
+                                    <span class="sport_name">桌球</span>
+                                </div>
+                                <div class="item_content">
+                                    <div class="item_title">桌球</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
-</html>
+                    <div class="select_item">
+                        <div class="item_padding"> 
+                            <a href="https://www.youtube.com/">   
+                                <div class="item_cover">
+                                    <img src="./index_files/012.png" alt="" class="sport_icon">
+                                    <span class="sport_name">跆拳道</span>
+                                </div>
+                                <div class="item_content">
+                                    <div class="item_title">跆拳道</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="select_item">
+                        <div class="item_padding"> 
+                            <a href="https://www.youtube.com/">   
+                                <div class="item_cover">
+                                    <img src="./index_files/013.png" alt="" class="sport_icon">
+                                    <span class="sport_name">羽球</span>
+                                </div>
+                                <div class="item_content">
+                                    <div class="item_title">羽球</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="select_item">
+                        <div class="item_padding"> 
+                            <a href="https://www.youtube.com/">   
+                                <div class="item_cover">
+                                    <img src="./index_files/014.png" alt="" class="sport_icon">
+                                    <span class="sport_name">游泳</span>
+                                </div>
+                                <div class="item_content">
+                                    <div class="item_title">游泳</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="select_item" style="background: #78bfe8;">
+                        <div class="item_padding"> 
+                            <a href="https://www.youtube.com/">   
+                                <div class="item_cover">
+                                    <img src="./index_files/015.png" alt="" class="sport_icon">
+                                    <span class="sport_name">田徑</span>
+                                </div>
+                                <div class="item_content">
+                                    <div class="item_title">田徑</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="select_item">
+                        <div class="item_padding"> 
+                            <a href="https://www.youtube.com/">   
+                                <div class="item_cover">
+                                    <img src="./index_files/0004.png" alt="" class="sport_icon">
+                                    <span class="sport_name">108年中等學校學生籃球聯賽</span>
+                                </div>
+                                <div class="item_content">
+                                    <div class="item_title">108年中等學校學生籃球聯賽</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="select_item">
+                        <div class="item_padding"> 
+                            <a href="https://www.youtube.com/">   
+                                <div class="item_cover">
+                                    <img src="./index_files/2.png" alt="" class="sport_icon">
+                                    <span class="sport_name">國中普及化運動</span>
+                                </div>
+                                <div class="item_content">
+                                    <div class="item_title">國中普及化運動</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="select_item">
+                        <div class="item_padding"> 
+                            <a href="https://www.youtube.com/">   
+                                <div class="item_cover">
+                                    <img src="./index_files/1.png" alt="" class="sport_icon">
+                                    <span class="sport_name">國小普及化運動</span>
+                                </div>
+                                <div class="item_content">
+                                    <div class="item_title">國小普及化運動</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <div class="cross_line"></div>
+    <section class="news">
+        <div class="container">
+            <div class="section_title"> <i class="fa" aria-hidden="true"></i> 最新消息 </div>
+
+            <!--div-- class="news_wrapper">
+
+                <div class="news_item">
+                    <a href="javascript:;" class="news_title">
+                        普及化報名系統操作說明
+                    </a>
+                    <div class="news_time"> 2019/01/04 </div>
+                    <div class="news_content">
+                        <a href="http://jpopsports.nchu.edu.tw/downloads/%E5%9C%8B%E5%B0%8F%E6%99%AE%E5%8F%8A%E5%8C%96%E5%A0%B1%E5%90%8D%E4%BD%9C%E6%A5%AD%E6%93%8D%E4%BD%9C%E8%AA%AA%E6%98%8E.pdf" target="_blank">下載操作說明</a>
+                    </div>
+                </div-->
+
+                
+
+                <!--div class="news_item">
+                    <a href="javascript:;" class="news_title">
+                    </a>
+                    <div class="news_time"><br /></div>
+                    <div class="news_content">
+                    </div>
+                </div-->
+                <!--div class="news_item">
+                    <a href="javascript:;" class="news_title">
+                        跳繩決賽帳密登入注意事項
+                    </a>
+                    <div class="news_time"> 2018/03/27 </div>
+                    <div class="news_content">
+                        帳密之學校代碼，請刪除代碼的第一個 0，<br>例如：064695 請登入為 64695
+                    </div>
+                </div-->
+
+
+            </div--></div>
+        
+    </section>
+    <div class="cross_line"></div>
+    <section class="partner">
+        <div class="container">
+            <div class="section_title"> <i class="fa" aria-hidden="true"></i> 相關連結 </div>
+            <div class="partner_wrapper">
+                <div class="partner_item">
+                    <a class="item_img" href="http://www.tc.edu.tw/" target="_blank">
+						<span class="img_center">
+								<table><tbody><tr><td><img src="./index_files/logo.gif" alt=""></td></tr></tbody></table>
+						</span>
+                    </a>
+                </div>                               																				
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div id="footer">
+                
+            </div>
+        </div>
+    </footer>
+</main>
+
+
+<!--  各分區查詢彈出視窗  -->
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+<!-- common -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://jpopsports.nchu.edu.tw/assets/html5shiv.js/3.7.2/html5shiv.min.js"></script>
+<script type="text/javascript" src="http://jpopsports.nchu.edu.tw/assets/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="./index_files/jquery-1.11.2.min.js.下載" type="text/javascript"></script>
+<script src="./index_files/bootstrap.min.js.下載" type="text/javascript"></script>
+<script src="./index_files/SmoothScroll.js.下載" type="text/javascript"></script>
+<script src="./index_files/remodal.js.下載" type="text/javascript"></script>
+<script src="./index_files/pace.js.下載" type="text/javascript"></script>
+<script src="./index_files/primary.js.下載" type="text/javascript"></script>
+
+<!-- index js -->
+<script type="text/javascript">
+    $(function(){
+
+    });
+</script>
+<div class="remodal-overlay remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="sport1" tabindex="-1">
+        <h1>排球</h1>
+        <table class="modal_table">
+                            <tbody><tr>
+                                                                        <th>第一區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>豐原區、后里區、潭子區，石岡區、新社區，和平區、神岡區、外埔區、東勢區、霧峰區、大里區、太平區、大肚區、烏日區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第二區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>中區、東區、西區、南區、北區、西屯區、南屯區、北屯區、大甲區、沙鹿區、梧棲區、大安區、龍井區、清水區、大雅區</td>
+                                                            </tr>
+                    </tbody></table>
+        <button data-remodal-action="confirm" class="remodal-confirm">確認</button>
+    </div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="sport2" tabindex="-1">
+        <h1>躲避球</h1>
+        <table class="modal_table">
+                            <tbody><tr>
+                                                                        <th>第一區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>東區、中區、北區、西區、西屯區、南屯區、南區、烏日區、太平區、大里區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第二區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>豐原區、后里區、外浦區、大雅區、潭子區、神岡區、石岡區、東勢區、新社區、和平區、霧峰區、北屯區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第三區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>大甲區、大安區、清水區、沙鹿區、梧棲區、龍井區、大肚區</td>
+                                                            </tr>
+                    </tbody></table>
+        <button data-remodal-action="confirm" class="remodal-confirm">確認</button>
+    </div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="sport3" tabindex="-1">
+        <h1>籃球</h1>
+        <table class="modal_table">
+                            <tbody><tr>
+                                                                        <th>第一區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>東區、中區、北區、北屯區、太平區、大里區、霧峰區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第二區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>西區、南區、西屯區、南屯區、大甲區、梧棲區、沙鹿區、龍井區、大肚區、烏日區、清水區、大安區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第三區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>大雅區、潭子區、后里區、豐原區、外埔區、神岡區、新社區、東勢區、和平區、石岡區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th></th>
+                                                            </tr>
+                            <tr>
+                                                                        <td></td>
+                                                            </tr>
+                    </tbody></table>
+        <button data-remodal-action="confirm" class="remodal-confirm">確認</button>
+    </div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="sport4" tabindex="-1">
+        <h1>足球</h1>
+        <table class="modal_table">
+                            <tbody><tr>
+                                                                        <th>無分區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>無分區</td>
+                                                            </tr>
+                    </tbody></table>
+        <button data-remodal-action="confirm" class="remodal-confirm">確認</button>
+    </div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="sport5" tabindex="-1">
+        <h1>游泳</h1>
+        <table class="modal_table">
+                            <tbody><tr>
+                                                                        <th>無分區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>無分區</td>
+                                                            </tr>
+                    </tbody></table>
+        <button data-remodal-action="confirm" class="remodal-confirm">確認</button>
+    </div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="sport6" tabindex="-1">
+        <h1>路跑</h1>
+        <table class="modal_table">
+                            <tbody><tr>
+                                                                        <th>無分區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>無分區</td>
+                                                            </tr>
+                    </tbody></table>
+        <button data-remodal-action="confirm" class="remodal-confirm">確認</button>
+    </div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="sport7" tabindex="-1">
+        <h1>跳繩</h1>
+        <table class="modal_table">
+                            <tbody><tr>
+                                                                        <th>第一區</th>
+                                                                                                <th>第二區</th>
+                                                                                                <th>第三區</th>
+                                                                                                <th>第四區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>豐原區</td>
+                                                                                                <td>后里區</td>
+                                                                                                <td>神岡區</td>
+                                                                                                <td>大雅區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第五區</th>
+                                                                                                <th>第六區</th>
+                                                                                                <th>第七區</th>
+                                                                                                <th>第八區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>潭子區</td>
+                                                                                                <td>外埔區</td>
+                                                                                                <td>清水區</td>
+                                                                                                <td>梧棲區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第九區</th>
+                                                                                                <th>第十區</th>
+                                                                                                <th>第十一區</th>
+                                                                                                <th>第十二區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>大甲區</td>
+                                                                                                <td>沙鹿區</td>
+                                                                                                <td>大安區</td>
+                                                                                                <td>龍井區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第十三區</th>
+                                                                                                <th>第十四區</th>
+                                                                                                <th>第十五區</th>
+                                                                                                <th>第十六區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>大肚區</td>
+                                                                                                <td>烏日區</td>
+                                                                                                <td>大里區</td>
+                                                                                                <td>太平區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第十七區</th>
+                                                                                                <th>第十八區</th>
+                                                                                                <th>第十九區</th>
+                                                                                                <th>第二十區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>霧峰區</td>
+                                                                                                <td>東勢區</td>
+                                                                                                <td>石岡區、新社區</td>
+                                                                                                <td>和平區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第廿一區</th>
+                                                                                                <th>第廿二區</th>
+                                                                                                <th>第廿三區</th>
+                                                                                                <th>第廿四區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>西屯區</td>
+                                                                                                <td>南屯區</td>
+                                                                                                <td>東區</td>
+                                                                                                <td>中區、南區</td>
+                                                            </tr>
+                            <tr>
+                                                                        <th>第廿五區</th>
+                                                                                                <th>第廿六區</th>
+                                                                                                <th>第廿七區</th>
+                                                                                                <th></th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>西區</td>
+                                                                                                <td>北區</td>
+                                                                                                <td>北屯區</td>
+                                                                                                <td></td>
+                                                            </tr>
+                    </tbody></table>
+        <button data-remodal-action="confirm" class="remodal-confirm">確認</button>
+    </div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="sport8" tabindex="-1">
+        <h1>健身操</h1>
+        <table class="modal_table">
+                            <tbody><tr>
+                                                                        <th>無分區</th>
+                                                            </tr>
+                            <tr>
+                                                                        <td>無分區</td>
+                                                            </tr>
+                    </tbody></table>
+        <button data-remodal-action="confirm" class="remodal-confirm">確認</button>
+    </div></div></body></html>

@@ -1,0 +1,46 @@
+$(function(){
+
+	//選擇運動項目
+	$('.item_cover').click(function(){
+		var $item = $(this).parents('.select_item');
+		$('.select_item').removeClass('active');
+		$item.addClass('active');
+		return false;
+	});
+
+	$('.item_close').click(function(){
+		var $item = $(this).parents('.select_item');
+		$item.removeClass('active');
+		return false;
+	});
+
+	$('.select_item').each(function(){
+		var $item = $(this);
+		$item.find('.item_select select').change(function(){
+			_val = $(this).find('option:selected').val();
+			$item.find('.item_submit').attr('href',_val);
+		});
+	});
+
+	$(window).load(function(){
+
+		//讀取後顯示所有東西
+		Pace.on('hide', function(){
+			$('#loading').css({'background-color':'#fff'}).addClass('fadeOut animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+				$('#loading').remove();
+			});
+		});
+
+	});
+
+	$('[data-toggle="tooltip"]').tooltip();
+
+	$('a.go_top').click(function(){
+		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$body.animate({
+			scrollTop: 0
+		}, 600); 
+		return false;
+	});
+
+});
