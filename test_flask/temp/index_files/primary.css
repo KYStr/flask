@@ -389,7 +389,7 @@ img {
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
   opacity: 0;
-  visibility: hidden;
+
 }
 .sport_select .select_wrapper .select_item .item_content .item_title {
   width: 100%;
