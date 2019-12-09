@@ -1,3 +1,4 @@
+# coding=UTF-8
 from app.crud import crud
 from flask import render_template, request, jsonify, redirect
 from app.forms import MenuAddForm

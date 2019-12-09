@@ -1,3 +1,4 @@
+# coding=UTF-8
 from app.crud import crud
 from flask import render_template, request, jsonify
 from app.forms import GameAddForm
@@ -9,7 +10,7 @@ from app.crud.views_common import dt
 @crud.route("/create/game/", methods=("GET", "POST"))
 def create_game():
     data = dict(
-        title="新增大賽"
+        title=str("新增大賽")
     )
     if request.method == "POST":
         res = dict(code=0)
@@ -22,7 +23,7 @@ def create_game():
             res["code"] = 0
         return jsonify(res)
     else:
-    	return render_template("create_game.html", data=data)
+        return render_template("create_game.html", data=data)
 
 
 def save_game(form):
